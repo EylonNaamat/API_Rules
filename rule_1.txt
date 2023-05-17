@@ -1,0 +1,13 @@
+request_headers:user-agent: python-requests/2.22.0
+id :913101
+ msg:'Found User-Agent associated with scripting/generic HTTP client'
+ tags:["'application-multi'", "'language-multi'", "'platform-multi'", "'attack-reputation-scripting'", "'OWASP_CRS'", "'capec/1000/118/224/541/310'", "'PCI/6.5.10'", "'paranoia-level/2'"]
+ severity 'CRITICAL'
+ place_to_lookfor:['request_headers:user-agent']
+ operator:@pmFromFile
+args:scripting-user-agents.data
+child:None
+
+
+
+from REQUEST-913-SCANNER-DETECTION.conf 
